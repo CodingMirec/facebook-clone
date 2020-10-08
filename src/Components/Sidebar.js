@@ -1,8 +1,6 @@
 import React from "react";
 // import { useStateValue } from "../StateProvider";
-
 import SidebarRow from "./SidebarRow";
-import "./Sidebar.css";
 
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import EmojiFlagsIcon from "@material-ui/icons/EmojiFlags";
@@ -11,12 +9,17 @@ import ChatIcon from "@material-ui/icons/Chat";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import ExpandMoreOutlined from "@material-ui/icons/ExpandMore";
-import userEvent from "@testing-library/user-event";
+// import userEvent from "@testing-library/user-event";
+
+import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
-    <div>
-      <SidebarRow src="" title="Frankie" />
+    <div className="sidebar">
+      <SidebarRow
+        src="https://icons-for-free.com/iconfiles/png/512/avatar-1320568024619304547.png"
+        title="Frankie"
+      />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title="COVID-19 Information Center"
